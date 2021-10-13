@@ -1,5 +1,75 @@
-Side Project
+MoodNow
 ============
+
+## Table of Contents
+1. [Overview](#Overview)
+1. [Product Spec](#Product-Spec)
+1. [Wireframes](#Wireframes)
+2. [Schema](#Schema)
+
+## Overview
+### Description
+If you are struggling with mood swings or simply want to be more aware of your emotional health and wellbeing, MoodNow accompanies you with daily mood journal, symptomp tracker, treatment reminder, and mental health report.
+
+### App Evaluation
+
+- **Category:** Health and wellness.
+- **Mobile:** This app would be primarily developed for mobile.
+- **Story:** MoodNow gives user the right questions to track moods, activities, and other daily mental health milestones in a digital journal. The app also gives you stats on your moods and thoughts over time so you can better understand the context around your moods, behaviors, and habits.
+- **Market:** Any individual could choose to use this app to improve their emotional wellbeing, but our target audience would be people who struggles with mood swings, PMDD, bipolar disorder, depression, anxiety and other emotional problems.
+- **Habit:** This app can be the daily app for user to track their mood. The app also gives stats on moods and thoughts over time so user can better understand the context around their moods, behaviors, and habits. 
+- **Scope:** As a personalized mental health companion, MoodNow checks on user three times a day with questions that "learn" from their responses. These questions generate Insights and other resources most relevant to user emotional health.
+
+## Product Spec
+
+## 1. User Stories
+
+**Required Must-have Stories**
+- [ ] User can register a new account
+- [ ] User can login
+- [ ] User can log their mood 
+- [ ] User can view the list of mood journal
+- [ ] User can answer questions 
+- [ ] User can edit their mood
+
+**Optional Nice-to-Have Stories**
+- [ ] User can see mental health report
+- [ ] User can write mood diary
+- [ ] User can add severity of symptomps 
+- [ ] User can add and receive reminder --> for medication and treatment
+- [ ] Integration with Google calendar
+- [ ] Integration with Gmail --> sending sos email for help
+    
+### 2. Screen Archetypes
+* Login
+* Daily Checkin
+    * Daily questions that will track user response
+* Log Mood
+    * User can log in their mood by scoring 1 to 5 response
+    * User can jot down their thoughs in free form mood diary
+* Reports
+    * User can view their mental health reports overtime
+* Reminder
+* SOS
+
+### 3. Navigation
+
+**Tab Navigation** (Tab to Screen)
+
+**Flow Navigation** (Screen to Screen)
+
+## Wireframes
+
+## Schema 
+
+### Models
+
+#### Mood journal model
+
+### Networking
+
+## Video Walkthrough
+
 
 ### Due - Thursday, December 16, 2021 - 5pm
 
