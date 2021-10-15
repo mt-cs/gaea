@@ -14,7 +14,7 @@ If you are struggling with mood swings or simply want to be more aware of your e
 ### App Evaluation
 
 - **Category:** Health and wellness.
-- **Mobile:** This app would be primarily developed for mobile using iOS.
+- **Mobile:** This app would be primarily developed for web.
 - **Story:** MoodNow gives user the right questions to track moods, activities, and other daily mental health milestones in a digital journal. The app also gives you stats on your moods and thoughts over time so you can better understand the context around your moods, behaviors, and habits.
 - **Market:** Any individual could choose to use this app to improve their emotional wellbeing, but our target audience would be people who struggles with mood swings, PMDD, bipolar disorder, depression, anxiety and other emotional problems.
 - **Habit:** This app can be the daily app for user to track their mood. The app also gives stats on moods and thoughts over time so user can better understand the context around their moods, behaviors, and habits. 
@@ -62,7 +62,7 @@ If you are struggling with mood swings or simply want to be more aware of your e
 
 ## Teck Stack
 ### Client
-The client is an iOS client built with SwiftUI using XCode for Mac.
+The client is a webApp developed in Django.
 
 ### Server
 The server is done with REST API on Node.js.
