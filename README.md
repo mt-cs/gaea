@@ -1,4 +1,4 @@
-MoodNow
+GAEA
 ============
 
 ## Table of Contents
@@ -9,60 +9,29 @@ MoodNow
 
 ## Overview
 ### Description
-If you are struggling with mood swings or simply want to be more aware of your emotional health and wellbeing, MoodNow accompanies you with daily mood journal, symptomp tracker, treatment reminder, and mental health report.
+Gaea is a web-app dashboard to visualize and query [AWS Datalake](https://aws.amazon.com/solutions/implementations/data-lake-solution/) powered by [Django](https://www.djangoproject.com/) + [React](https://reactjs.org/).
 
-### App Evaluation
+### Features
 
-- **Category:** Health and wellness.
-- **Mobile:** This app would be primarily developed for web.
-- **Story:** MoodNow gives user the right questions to track moods, activities, and other daily mental health milestones in a digital journal. The app also gives you stats on your moods and thoughts over time so you can better understand the context around your moods, behaviors, and habits.
-- **Market:** Any individual could choose to use this app to improve their emotional wellbeing, but our target audience would be people who struggles with mood swings, PMDD, bipolar disorder, depression, anxiety and other emotional problems.
-- **Habit:** This app can be the daily app for user to track their mood. The app also gives stats on moods and thoughts over time so user can better understand the context around their moods, behaviors, and habits. 
-- **Scope:** As a personalized mental health companion, MoodNow checks on user three times a day with questions that "learn" from their responses. These questions generate Insights and other resources most relevant to user emotional health.
+It currently features:
 
-## Product Spec
+- a homepage that displays:
+    - Total amount of data size
+    - Number of active dashboard
+    - Top 10 most used workloads
+    - Number of daily users
+    - Update history on workloads status
+- a search interface to query resources by type, name or attributes
 
-## 1. User Stories
-
-**Required Must-have Stories**
-- [ ] User can register a new account
-- [ ] User can login
-- [ ] User can log their mood 
-- [ ] User can view the list of mood journal
-- [ ] User can answer questions 
-- [ ] User can edit their mood
-
-**Optional Nice-to-Have Stories**
-- [ ] User can see mental health report
-- [ ] User can write mood diary
-- [ ] User can add severity of symptomps 
-- [ ] User can add and receive reminder --> for medication and treatment
-- [ ] Integration with Google calendar
-- [ ] Integration with Gmail --> sending sos email for help
-    
-### 2. Screen Archetypes
-* Login
-* Daily Checkin
-    * Daily questions that will track user response
-* Log Mood
-    * User can log in their mood by scoring 1 to 5 response
-    * User can jot down their thoughs in free form mood diary
-* Reports
-    * User can view their mental health reports overtime
-* Reminder
-* SOS
-
-### 3. Navigation
-
-**Tab Navigation** (Tab to Screen)
-
-**Flow Navigation** (Screen to Screen)
 
 ## Wireframes
+![gaea1](https://user-images.githubusercontent.com/60201466/138014716-9162be01-db68-4349-b246-8f4160425d88.jpg)
+![gaea2](https://user-images.githubusercontent.com/60201466/138014722-b793f975-f480-40b4-98ba-bfdd7b563e43.jpg)
 
 ## Teck Stack
 ### Client
 The client is a webApp developed in Django.
+Frontend is powerd by React.
 
 ### Server
 The server is done with REST API on Node.js.
@@ -70,11 +39,12 @@ The server is done with REST API on Node.js.
 ### Database
 The database is done with Sequilize that query to PostgreSQL DB.
 
+### Web Hosting
+The web-app is hosted in AWS Beanstalk.
+
 ## Schema 
 
 ### Models
-
-#### Mood journal model
 
 ### Networking
 
