@@ -4,7 +4,8 @@ GAEA
 ## Table of Contents
 1. [Overview](#Overview)
 2. [Wireframes](#Wireframes)
-3. [Schema](#Schema)
+3. [Teck Stack](#TechStack)
+4. [Schema](#Schema)
 
 ## Overview
 ### Description
