@@ -28,7 +28,7 @@ It currently features:
 ![gaea1](https://user-images.githubusercontent.com/60201466/138014716-9162be01-db68-4349-b246-8f4160425d88.jpg)
 ![gaea2](https://user-images.githubusercontent.com/60201466/138014722-b793f975-f480-40b4-98ba-bfdd7b563e43.jpg)
 
-## Teck Stack
+## Tech Stack
 ### Client
 The client is a webApp developed in Django.
 Frontend is powerd by React.
