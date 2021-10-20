@@ -9,19 +9,19 @@ GAEA
 
 ## Overview
 ### Description
-Gaea is a web-app dashboard to visualize and query [AWS Datalake](https://aws.amazon.com/solutions/implementations/data-lake-solution/) powered by [Django](https://www.djangoproject.com/) + [React](https://reactjs.org/).
+GAEA is a web-app dashboard to visualize and query [AWS Datalake](https://aws.amazon.com/solutions/implementations/data-lake-solution/) powered by [Django](https://www.djangoproject.com/) + [React](https://reactjs.org/).
 
 ### Features
 
 It currently features:
 
-- a homepage that displays:
+- A homepage that displays:
     - Total amount of data size
     - Number of active dashboard
     - Top 10 most used workloads
     - Number of daily users
     - Update history on workloads status
-- a search interface to query resources by type, name or attributes
+- A search interface to query resources by type, name or attributes
 
 
 ## Wireframes
