@@ -21,7 +21,7 @@ It currently features:
     - Top 10 most used workloads
     - Number of daily users
     - Update history on workloads status
-- A search interface to query resources by type, name or attributes
+- A search interface to query resources by keyword, RunID, tag or attributes
 
 
 ## Wireframes
