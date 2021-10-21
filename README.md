@@ -29,12 +29,14 @@ It currently features:
 ![gaea2](https://user-images.githubusercontent.com/60201466/138014722-b793f975-f480-40b4-98ba-bfdd7b563e43.jpg)
 
 ## TechStack
-### Client
-The client is a webApp developed in Django.
-Frontend is powerd by React.
+### Frontend
+GAEA is a React.js App powered by HTML, CSS, and Bootstrap.
 
 ### Server
 The server is done with REST API on Node.js.
+
+### Framework
+GAEA is built in Python-based Django REST Framework.
 
 ### Database
 The database is done with Sequilize that query to PostgreSQL DB.
