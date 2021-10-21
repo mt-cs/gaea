@@ -44,6 +44,8 @@ The web-app is hosted in AWS Beanstalk.
 
 ## Schema 
 
+![GaeaArchitecture](https://user-images.githubusercontent.com/60201466/138247005-9aad82ff-8be2-4467-b73e-e4ddf5f328bd.png)
+
 ### Models
 
 ### Networking
