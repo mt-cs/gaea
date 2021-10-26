@@ -1,0 +1,19 @@
+Goal,Status,Progress
+G1,In Progress,0%
+G2,Completed,100%
+G3,Cancelled,0%
+G4,In Progress,5%
+G5,Completed,100%
+G6,Cancelled,0%
+G7,In Progress,30%
+G8,Completed,100%
+G9,Cancelled,0%
+G10,In Progress,25%
+G11,Completed,100%
+G12,Cancelled,0%
+G13,In Progress,90%
+G14,Completed,100%
+G15,Cancelled,0%
+G16,In Progress,88%
+G17,Completed,100%
+G18,Cancelled,0%
