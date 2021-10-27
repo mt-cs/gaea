@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from "react";
 import * as XLSX from 'xlsx';
+// import axios from 'axios';
 import dashBoardCSV from '../workload_sample_data-Sheet1.csv'
 import DataTable from 'react-data-table-component';
 
@@ -9,6 +10,9 @@ function SearchPage(props) {
   const [columns, setColumns] = useState([]);
   const [datas, setData] = useState([]);
   const [search, setSearch] = React.useState('');
+  
+  // Reading from CSV
+
   const processData = dataString => {
     const dataStringLines = dataString.split(/\r\n|\n/);
     const headers = dataStringLines[0].split(/,(?![^"]*"(?:(?:[^"]*"){2})*[^"]*$)/);
@@ -44,7 +48,7 @@ function SearchPage(props) {
       name: c,
       selector: c,
     }));
-
+    setData(list)
     setSearchPool(list)
     setColumns(columns);
   }
@@ -69,6 +73,33 @@ function SearchPage(props) {
     req.send();
     }
 
+// Connecting to Django with axios
+
+// const handleDashboardData = () => {
+//   const url = "http://10.105.184.110:8000/api/workload/"
+//   axios.get(url)
+//   .then((res) => setSearchPool(res.data))
+//     .catch((err) => console.log(err));
+//   handleUploadedData()
+// }
+
+// const handleUploadedData = () => {
+//   const headers = []
+//   for(let key in searchPool[0]){
+//     headers.push(key)
+//   }
+//   //Object.keys(searchPool[0])
+//     console.log(searchPool)
+//     console.log(headers)
+//        const columns = headers.map(c => ({
+//         name: c,
+//         selector: c,
+//       }));
+//     setData(searchPool)
+//     setColumns(columns)  
+// }
+
+console.log(searchPool)
     useEffect(handleDashboardData, []);
 
     const handleSearch = (event) => {
@@ -77,6 +108,7 @@ function SearchPage(props) {
 
     const res = searchPool.filter((item) =>
           item['Workload'].toLowerCase().includes(searchItem.toLowerCase())
+          //item['workload_name'].toLowerCase().includes(searchItem.toLowerCase())
         )
         setData(res);
     };

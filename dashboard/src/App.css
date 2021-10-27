@@ -2,7 +2,6 @@
   width: 40px;
   height: 40px;
 }
-
 .btn-toggle::after {
   width: 1.25em;
   line-height: 0;
@@ -10,20 +9,48 @@
   transition: transform .35s ease;
   transform-origin: .5em 50%;
 }
+.dropdown-toggle::after {
+  content: ">";
+  border-top: 0;
+  position: absolute;
+  right: 0;
+}
 .img-link {
-  height:150px;
+  height:250px;
+}
+.img-link div {
+  overflow: hidden;
+}
+.read-more {
+  overflow: hidden;
+    white-space: wrap;
+    text-overflow: ellipsis;
+}
+.nav-link {
+  color: rgb(49, 64, 112);
 }
 .nav-item .dropdown .btn-secondary {
-  color: #126efc;
+  color: #6a9ecc;
   background-color: transparent;
   border-color: transparent;
+  text-align: left;
+}
+.nav-item .dropdown .btn-secondary:hover{
+  color: rgb(48, 80, 187);
 }
 .nav-item .dropdown {
-  text-align: center;
+  text-align: left;
 }
-
+.dropright button {
+  width: 100%;
+}
+.my-nav-link {
+  text-align: left!important;
+  padding-left: 12px;
+  color: #6a9ecc;
+}
 .filter-btn {
-  background-color: black;
+  background-color:#6a9ecc;
   color: #fff;
   border-radius: 5px;
   height: 40px;
@@ -32,17 +59,47 @@
   align-items: flex-end;
 }
 .filter-box {
-  border: 1px solid black;
+  border: 1px solid#6a9ecc;
   margin-bottom: 20px;
   padding: 25px;
 }
 .form-group label {
   line-height: 1.2;
 }
-
+.my-icon-class {
+  margin-right: 10px;
+}
+.my-icons {
+  height: 20px;
+  color: #6a9ecc;
+}
+.progress-complete {
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  margin-right: 5px;
+  padding: 0;
+  background-color:rgb(90, 241, 110);
+}
+.progress-cancel {
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  margin-right: 5px;
+  padding: 0;
+  background-color:rgb(248, 81, 81);
+}
+.progress {
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  margin-right: 5px;
+  padding: 0;
+  background-color: rgb(247, 225, 103);
+}
 footer {
   height: 80px;
   color: #fff;
-  background-color: black;
+  background-color:#6a9ecc;
   padding: 10px;
 }

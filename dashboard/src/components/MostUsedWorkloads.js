@@ -1,9 +1,6 @@
 import React from "react";
 import {Bar} from 'react-chartjs-2'
 
-
-
-
 function sortByValue(a, b) {
   return b[8] - a[8];
 }
@@ -14,8 +11,8 @@ function MostUsed(props) {
     datasets: [
       {
         label: 'Most Used',
-        backgroundColor: '#126efc',
-        borderColor: 'rgba(75,192,192,1)',
+        backgroundColor: '#6a9ecc',
+        borderColor: 'rgba(184,206,224,1)',
         borderWidth: 1,
         data: []
       }

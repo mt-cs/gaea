@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+import { FiLayers, FiInfo } from 'react-icons/fi';
 // import { Link } from 'react-router-dom';
 
 const Example = (props) => {
@@ -10,7 +11,7 @@ const Example = (props) => {
   return (
     <Dropdown direction="right" isOpen={dropdownOpen} toggle={toggle}>
       <DropdownToggle caret>
-        Quick Links
+        <FiInfo className="my-icon-class"/>Quick Links
       </DropdownToggle>
       <DropdownMenu>
         <DropdownItem header>Header</DropdownItem>
@@ -27,9 +28,9 @@ function NavPill(props) {
     return (
       <>
       <ul className="nav flex-column">
-      <li className="nav-item">
-        <a className="nav-link btn active align-items-center rounded" aria-current="page" href="/search">
-          Search Workloads
+      <li className="nav-item text-left">
+        <a className="nav-link btn active my-nav-link rounded" aria-current="page" href="/search">
+        <FiLayers/> Search Workloads
         </a>
       </li>
       <li className="nav-item">

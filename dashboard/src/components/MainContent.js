@@ -8,10 +8,6 @@ import Footer from './Footer';
 import dashBoardCSV from '../workload_sample_data-Sheet1.csv'
 import updateCSV from '../status_progress-Sheet1.csv'
 
-
-
-
-
 function MainContent() {
   const [dashboardData, setDashboardData] = useState([]);
   // const [progressData, setProgressData] = useState(false);
@@ -49,11 +45,29 @@ function MainContent() {
     }
 
     // prepare columns list from headers
-    const columns = headers.map(c => ({
+    const columns = headers.map(c => (c === 'Status' ?{
       name: c,
-      selector: c,
-    }));
+      selector: row => row[c],
+      sortable: true,
+      cell: row => 
+      <div className="row align-items-center text-left">
+        <div 
+          className={
+            `${row[c] === 'Completed' ? "progress-complete" : 
+            row[c] === 'In Progress' ? "progress" :
+            "progress-cancel"}`}>
+        </div> 
+        {row[c]}
+      </div>,
 
+    } : 
+    {
+    name: c,
+    selector: row => row[c],
+    sortable: true,
+  }
+    ));
+    console.log(columns)
     setData(list);
     setColumns(columns);
   }
