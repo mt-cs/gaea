@@ -10,10 +10,13 @@
   transform-origin: .5em 50%;
 }
 .dropdown-toggle::after {
-  content: ">";
+  content: "▼";
   border-top: 0;
   position: absolute;
   right: 0;
+}
+.dropdown-menu.show {
+  margin-left: -150px;
 }
 .img-link {
   height:250px;
@@ -27,7 +30,7 @@
     text-overflow: ellipsis;
 }
 .nav-link {
-  color: rgb(49, 64, 112);
+  color: rgb(4, 8, 19);
 }
 .nav-item .dropdown .btn-secondary {
   color: #6a9ecc;
@@ -36,8 +39,11 @@
   text-align: left;
 }
 .nav-item .dropdown .btn-secondary:hover{
-  color: rgb(48, 80, 187);
+  color: rgb(62, 94, 201);
 }
+.nav-item .dropdown .btn-secondary:focus{
+  box-shadow: 0 0 0 0.25rem rgb(147 188 255 / 50%);
+}  
 .nav-item .dropdown {
   text-align: left;
 }
@@ -50,10 +56,15 @@
   color: #6a9ecc;
 }
 .filter-btn {
-  background-color:#6a9ecc;
+  background-color: #6a9ecc;
   color: #fff;
   border-radius: 5px;
+  border-block-color: inherit;
+  border-width: thin;
   height: 40px;
+}  
+.filter-btn:hover {
+  background-color: #0856bd;
 }
 .filter-form {
   align-items: flex-end;
@@ -68,6 +79,9 @@
 }
 .my-icon-class {
   margin-right: 10px;
+}
+.icon-class {
+  margin-right: 6px;
 }
 .my-icons {
   height: 20px;
@@ -97,9 +111,46 @@
   padding: 0;
   background-color: rgb(247, 225, 103);
 }
+.btn-primary {
+  color: #fff;
+  background-color: #6a9ecc;
+  border-color: #6a9ecc;
+}
+.dropbtn {
+  background-color: transparent;
+  padding: 16px;
+  font-size: 12px;
+  border: none;
+}
+.dropdown {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.dropdown-content {
+  padding-left: 10px;
+  display: none;
+  /* position: absolute; */
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content p:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #6a9ecc;color: #fff;}
+
 footer {
   height: 80px;
   color: #fff;
-  background-color:#6a9ecc;
+  background-color: #6a9ecc;
   padding: 10px;
 }
