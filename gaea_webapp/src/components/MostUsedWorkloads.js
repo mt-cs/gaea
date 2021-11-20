@@ -28,7 +28,7 @@ function MostUsed(props) {
   return(
     <div className="col-md-6">
           <div className="h-100 p-2 border bg-light rounded-3">
-          <p>Top 10 Most Used Dashboard</p>
+          <p>Top Most Used Workloads</p>
           <Bar
           data={state}
           options={{
