@@ -2,10 +2,11 @@ import React from "react";
 import {Bar} from 'react-chartjs-2'
 
 function sortByValue(a, b) {
-  return b[8] - a[8];
+  return b["value"] - a["value"];
 }
       
 function MostUsed(props) {
+  console.log(props)
   const state = {
     labels: [],
     datasets: [
@@ -21,8 +22,8 @@ function MostUsed(props) {
   let sortedData = props.dataList.slice(1).sort(sortByValue);
   let topTen = sortedData.slice(0, 10)
     for(var i in topTen){
-    state.datasets[0].data.push(topTen[i][8]);
-    state.labels.push(topTen[i][0]);
+    state.datasets[0].data.push(topTen[i]["value"]);
+    state.labels.push(topTen[i]["workload_name"]);
   };
   return(
     <div className="col-md-6">
