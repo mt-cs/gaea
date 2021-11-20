@@ -39,7 +39,7 @@ The server is done with REST API on Node.js.
 GAEA is built in Python-based Django REST Framework.
 
 ### Database
-The database is done with Sequilize that query to PostgreSQL DB.
+The database is done with Sequilize that query to SQLite DB.
 
 ### Web Hosting
 The web-app is hosted in AWS Beanstalk.
