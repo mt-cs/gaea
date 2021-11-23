@@ -54,7 +54,7 @@ function SubHeader() {
           link="https://github.com/CS601-F21/side-project-mt-cs/blob/main/gaea_webapp/README.md"/>
         <LinkItem
           text={`
-          Overview, wireframes, tech stack, and schema.
+          Overview, wireframes, tech stack, and schema
           `}
           link="https://github.com/CS601-F21/side-project-mt-cs/blob/main/README.md"/>
         </div>

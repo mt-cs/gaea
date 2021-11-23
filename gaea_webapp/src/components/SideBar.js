@@ -17,17 +17,16 @@ const Example = (props) => {
       <DropdownMenu>
         {/* <DropdownItem header>Header</DropdownItem>
         <DropdownItem disabled>Action</DropdownItem> */}
-        {/* <DropdownItem tag={Link} href={"https://github.com/CS601-F21/side-project-mt-cs/"}> */}
         <DropdownItem>
           <a href="https://github.com/CS601-F21/side-project-mt-cs/" className="dropdown-link" target="_blank" rel="noreferrer">Repository</a>
         </DropdownItem>
         <DropdownItem divider />
         <DropdownItem>
-         <a href="https://github.com/CS601-F21/side-project-mt-cs/" className="dropdown-link" target="_blank" rel="noreferrer">Installation</a>
+         <a href="https://github.com/CS601-F21/side-project-mt-cs/blob/main/gaea_webapp/README.md" className="dropdown-link" target="_blank" rel="noreferrer">Installation</a>
         </DropdownItem>
         <DropdownItem divider />
         <DropdownItem>
-        <a href="https://github.com/CS601-F21/side-project-mt-cs/" className="dropdown-link" target="_blank" rel="noreferrer">Documentation</a>
+        <a href="https://github.com/CS601-F21/side-project-mt-cs/blob/main/README.md" className="dropdown-link" target="_blank" rel="noreferrer">Documentation</a>
         </DropdownItem>
       </DropdownMenu>
     </Dropdown>
