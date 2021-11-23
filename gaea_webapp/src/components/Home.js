@@ -40,7 +40,7 @@ function SubHeader() {
       </div>
     )
   }
-  function LinkItem() {
+  function LinkItem3() {
     return (          
         <div className="col-md-4 img-link">
           <div className="h-100 border text-center bg-light rounded">
@@ -65,9 +65,26 @@ function SubHeader() {
             <ReadMore 
               className="h-50" 
               text={`
-              Installation and how to run this web app.
+              Installation and how to run React.js web app using npm and yarn
               `}
               link="https://github.com/CS601-F21/side-project-mt-cs/blob/main/gaea_webapp/README.md"
+            />
+          </div>
+      </div>
+    )
+  }
+
+  function LinkItem() {
+    return (          
+        <div className="col-md-4 img-link">
+          <div className="h-100 border text-center bg-light rounded">
+            <img alt="logo" src={Logo} className="h-50 rounded-circle d-block mx-auto"/>
+            <ReadMore 
+              className="h-50" 
+              text={`
+              Github Repository
+              `}
+              link="https://github.com/CS601-F21/side-project-mt-cs/"
             />
           </div>
       </div>
@@ -79,7 +96,7 @@ function SubHeader() {
       <div className="row align-items-md-stretch">
         <LinkItem/>
         <LinkItem2/>
-        <LinkItem/>
+        <LinkItem3/>
       </div>
       </div>
     )
