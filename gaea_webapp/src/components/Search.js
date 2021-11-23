@@ -12,7 +12,7 @@ function SearchPage() {
     axios.get("http://10.105.184.110:8000/api/workload/")
     .then((res) => {
       const list = res.data;
-      let tableList = list.filter(item => item['status'] === 'In Progress')
+      let tableList = list.filter(item => item['status'] === 'Completed' || item['status'] === 'In Progress')
 
       const headers = [];
       for(let key in list[0]){
@@ -57,8 +57,6 @@ function SearchPage() {
         setData(res);
     };
     
-
-
     return(
         <div className="col-md-12">
             <div className="py-5 filter-box">
