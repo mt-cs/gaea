@@ -12,15 +12,21 @@ function Brand() {
 function NavItem() {
     return(
         <li className="nav-item">
-            <a href="https://www.w3schools.com/" className="nav-link">Link 02</a>
+            <a href="https://www.marisatania.com/contact-marisa" className="nav-link">Contact</a>
+        </li>
+    )
+}
+function NavAbout() {
+    return(
+        <li className="nav-item">
+            <a href="https://www.marisatania.com/about" className="nav-link">About</a>
         </li>
     )
 }
 function NavPill() {
     return(
         <ul className="nav nav-pills">
-            <NavItem/>
-            <NavItem/>
+            <NavAbout/>
             <NavItem/>
         </ul>
     )

@@ -14,9 +14,7 @@ function SubHeader() {
       <h1 className="display-5 fw-bold">GAEA</h1>
       <p className="fs-6">
       Welcome to GAEA!<br/>
-      Aut harum voluptatibus quia molestias, aperiam mollitia optio necessitatibus 
-      magnam officia facilis soluta asperiores maiores sapiente tempora quidem 
-      aliquid fugiat! Praesentium, architecto!
+      One stop workload data visualization, search, filter and progress history manager.
       </p>
       </div>
   
@@ -50,11 +48,26 @@ function SubHeader() {
             <ReadMore 
               className="h-50" 
               text={`
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Aut harum voluptatibus quia molestias, aperiam mollitia optio necessitatibus 
-      magnam officia facilis soluta asperiores maiores sapiente tempora quidem 
-      aliquid fugiat! Praesentium, architecto!
+              Overview, wireframes, tech stack, and schema.
               `}
+              link="https://github.com/CS601-F21/side-project-mt-cs/blob/main/README.md"
+            />
+          </div>
+      </div>
+    )
+  }
+
+  function LinkItem2() {
+    return (          
+        <div className="col-md-4 img-link">
+          <div className="h-100 border text-center bg-light rounded">
+            <img alt="logo" src={Logo} className="h-50 rounded-circle d-block mx-auto"/>
+            <ReadMore 
+              className="h-50" 
+              text={`
+              Installation and how to run this web app.
+              `}
+              link="https://github.com/CS601-F21/side-project-mt-cs/blob/main/gaea_webapp/README.md"
             />
           </div>
       </div>
@@ -65,7 +78,7 @@ function SubHeader() {
       <div className="col-md-12 py-3">
       <div className="row align-items-md-stretch">
         <LinkItem/>
-        <LinkItem/>
+        <LinkItem2/>
         <LinkItem/>
       </div>
       </div>
