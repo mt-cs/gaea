@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import { FiLayers, FiInfo } from 'react-icons/fi';
 // import { Link } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom'
 
 const Example = (props) => {
   const [dropdownOpen, setOpen] = useState(false);
@@ -14,11 +15,20 @@ const Example = (props) => {
         <FiInfo className="my-icon-class"/>Quick Links
       </DropdownToggle>
       <DropdownMenu>
-        <DropdownItem header>Header</DropdownItem>
-        <DropdownItem disabled>Action</DropdownItem>
-        <DropdownItem>Another Action</DropdownItem>
+        {/* <DropdownItem header>Header</DropdownItem>
+        <DropdownItem disabled>Action</DropdownItem> */}
+        {/* <DropdownItem tag={Link} href={"https://github.com/CS601-F21/side-project-mt-cs/"}> */}
+        <DropdownItem>
+          <a href="https://github.com/CS601-F21/side-project-mt-cs/" className="dropdown-link" target="_blank" rel="noreferrer">Repository</a>
+        </DropdownItem>
         <DropdownItem divider />
-        <DropdownItem>Another Action</DropdownItem>
+        <DropdownItem>
+         <a href="https://github.com/CS601-F21/side-project-mt-cs/" className="dropdown-link" target="_blank" rel="noreferrer">Installation</a>
+        </DropdownItem>
+        <DropdownItem divider />
+        <DropdownItem>
+        <a href="https://github.com/CS601-F21/side-project-mt-cs/" className="dropdown-link" target="_blank" rel="noreferrer">Documentation</a>
+        </DropdownItem>
       </DropdownMenu>
     </Dropdown>
   );
