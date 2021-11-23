@@ -20,3 +20,8 @@ class WorkloadSerializer(serializers.ModelSerializer):
 
     # def get_steps(self, obj):
     #     return [i.description for i in obj.workloadstep_set.all()]
+
+class DateWorkloadSerializer(serializers.Serializer):
+    day = serializers.CharField()
+    hits = serializers.IntegerField()
+    

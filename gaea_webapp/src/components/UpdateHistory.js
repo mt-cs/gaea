@@ -3,25 +3,25 @@ import DataTable from 'react-data-table-component';
 
 
 class UpdateHistory extends React.Component {
-    renderHead(){
-        console.log(this.props.data)
+    // renderHead(){
+    //     console.log(this.props.data)
 
-        const heads = this.props.columns.map((item, index)=>{
-            return(
-                <th key={index}>{item['name']}</th>
-              )
-                })
-        return heads
-        }
-    renderRow(item) {
-        const row = item.map(item =>item)
-        return row
+    //     const heads = this.props.columns.map((item, index)=>{
+    //         return(
+    //             <th key={index}>{item['name']}</th>
+    //           )
+    //             })
+    //     return heads
+    //     }
+    // renderRow(item) {
+    //     const row = item.map(item =>item)
+    //     return row
 
-    }
-    renderBody() {
-        const body = this.props.data.map(item =>this.renderRow(item))
-        return body
-    }
+    // }
+    // renderBody() {
+    //     const body = this.props.data.map(item =>this.renderRow(item))
+    //     return body
+    // }
 
     render() {
         return (

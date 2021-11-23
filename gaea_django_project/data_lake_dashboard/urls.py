@@ -17,15 +17,14 @@ from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
 from rest_framework.urlpatterns import format_suffix_patterns
-from workload.views import WorkloadView
+from workload.views import WorkloadView, PageHitsView
 
 router = routers.DefaultRouter()
 router.register(r'workload', WorkloadView, 'workloads')
-
+router.register(r'page_hits', PageHitsView, 'page_hits')
 
 urlpatterns = [
     path('api/', include(router.urls)),
-
     path('admin/', admin.site.urls)
 ]
 

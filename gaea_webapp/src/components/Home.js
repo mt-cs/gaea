@@ -34,7 +34,10 @@ function SubHeader() {
       <div className="col-md-12 py-3">
       <div className="row align-items-md-stretch">
         <MostUsed dataList={props.dataArray}/>
-        <DailyUSers/>
+        <DailyUSers 
+          pageHitsContents={props.pageHitsContents}
+          pageHitsHeaders={props.pageHitsHeaders}
+        />
       </div>
       </div>
     )
@@ -66,6 +69,8 @@ function SubHeader() {
       const [dashboardData, setDashboardData] = useState([]);
       const [columns, setColumns] = useState([]);
       const [data, setData] = useState([]);
+      const [pageHitsData, setPageHitsData] = useState([]);
+      const [pageHitsColumns, setPageHitsColumns] = useState([]);
     
       const handleDashboardData = () => {
         axios.get("http://10.105.184.110:8000/api/workload/")
@@ -138,47 +143,31 @@ function SubHeader() {
           // setDashboardData(list)
         })
         .catch((err) => console.log(err));
-          // handleUpdateData()
+        handlePageHitsData()
       }
-    
-        // const handleUpdateData = () => {
-        //   axios.get("http://localhost:8000/api/workload/")
-        //   .then((res) => {
-        //     const list = res.data;
-        //     const headers = [];
-        //     for(let key in list[0]){
-        //       headers.push(key)
-        //     }
-        //         // prepare columns list from headers
-        //     const columns = headers.map(c => (c === 'Status' ?{
-        //       name: c,
-        //       selector: row => row[c],
-        //       sortable: true,
-        //       cell: row => 
-        //       <div className="row align-items-center text-left">
-        //         <div 
-        //           className={
-        //             `${row[c] === 'Completed' ? "progress-complete" : 
-        //             row[c] === 'In Progress' ? "progress" :
-        //             "progress-cancel"}`}>
-        //         </div> 
-        //         {row[c]}
-        //       </div>,
-    
-        //     } : 
-        //     {
-        //     name: c,
-        //     selector: row => row[c],
-        //     sortable: true,
-        //   }
-        //     ));
-        //     setData(list);
-        //     setColumns(columns);
-        //     setDashboardData(list)
-        //   })
-        //   .catch((err) => console.log(err));
+      
+        const handlePageHitsData = () => {
+          axios.get("http://10.105.184.110:8000/api/page_hits/")
+          .then((res) => {
+            const list = res.data;
+            const headers = [];
+            for(let key in list[0]){
+              headers.push(key)
+            }
+                // prepare columns list from headers
+            const columns = headers.map(c => (
+            {
+            name: c,
+            selector: row => row[c],
+            sortable: true,
+          }
+            ));
+            setPageHitsData(list);
+            setPageHitsColumns(columns);
+          })
+          .catch((err) => console.log(err));
           
-        // }
+        }
       
         useEffect(() => {
           window.addEventListener('load', handleDashboardData);
@@ -190,7 +179,11 @@ function SubHeader() {
             <>
                 <SubHeader/>
                 <SummarySection dataArray={dashboardData}/>
-                <DataSection dataArray={dashboardData}/>
+                <DataSection 
+                  dataArray={dashboardData}
+                  pageHitsHeaders={pageHitsColumns}
+                  pageHitsContents={pageHitsData}
+                  />
                 <LinkSection/>
                 <UpdateHistory 
                   columns={columns}
