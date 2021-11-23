@@ -13,13 +13,13 @@ function NavPill() {
     return(
         <ul className="nav nav-pills">
             <NavItem
-                text={'About'}
+                text="About"
                 link="https://www.marisatania.com/about"/>
             <NavItem
-                text={'Work'}
+                text="Work"
                 link="https://www.marisatania.com"/>
             <NavItem
-                text={'Contact'}
+                text="Contact"
                 link="https://www.marisatania.com/contact-marisa"/>
         </ul>
     )

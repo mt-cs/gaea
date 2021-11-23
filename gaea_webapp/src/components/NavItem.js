@@ -3,7 +3,7 @@ import React from "react"
 function NavItem(props) {
     return(
         <li className="nav-item">
-            <a href={props.link} className="nav-link">{props.text}</a>
+            <a href={props.link} target="_blank" rel="noreferrer" className="nav-link">{props.text}</a>
         </li>
     )
 }
