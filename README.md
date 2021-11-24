@@ -36,10 +36,14 @@ GAEA is built in Python-based [Django REST Framework](https://www.django-rest-fr
 The database is done on [SQLite](https://docs.python.org/3/library/sqlite3.html#module-sqlite3). Django supports [SQLite 3.9.0](https://docs.djangoproject.com/en/3.2/ref/databases/#sqlite-notes) and later.
 
 ## Dependency
+
+## Sample Data
+
+## Installation
+
 ## Schema 
 
 ![GaeaArchitecture](https://user-images.githubusercontent.com/60201466/138249641-57944a61-450c-4791-9076-5945c5f9e752.png)
-
 
 ### Models
 
@@ -48,7 +52,6 @@ The database is done on [SQLite](https://docs.python.org/3/library/sqlite3.html#
 ## Wireframes
 ![gaea1](https://user-images.githubusercontent.com/60201466/138014716-9162be01-db68-4349-b246-8f4160425d88.jpg)
 ![gaea2](https://user-images.githubusercontent.com/60201466/138014722-b793f975-f480-40b4-98ba-bfdd7b563e43.jpg)
-
 
 
 ### Due - Thursday, December 16, 2021 - 5pm

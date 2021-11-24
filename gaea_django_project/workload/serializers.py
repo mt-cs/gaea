@@ -7,8 +7,8 @@ class WorkloadSerializer(serializers.ModelSerializer):
     class Meta:
         model = Workload
         fields = (
-            'run_id', 'date', 'workload_name', 'tester', 'cloud_name', 
-            'machine_type', 'platform', 'metric', 'value', 'unit', 
+            'run_id', 'date', 'workload_name', 'image', 'family', 
+            'network_mode', 'platform', 'metric', 'value', 'cpu', 
             'tags','status', 'progress', 'workload_url')
 
 
