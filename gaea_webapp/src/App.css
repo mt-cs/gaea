@@ -146,6 +146,7 @@
 }
 .dropdown-content {
   padding-left: 10px;
+  padding-right: 10px;
   display: none;
   /* position: absolute; */
   background-color: #f1f1f1;

@@ -12,7 +12,7 @@ function SubHeader() {
       <div className="container-fluid py-5">
       <h1 className="display-5 fw-bold">GAEA</h1>
       <p className="fs-6">
-      Welcome to GAEA!<br/>
+      Welcome to GAEA!<br/><br/>
       One stop workload data visualization, search, filter and progress history manager.
       </p>
       </div>
