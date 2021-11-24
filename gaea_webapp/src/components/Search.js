@@ -15,25 +15,40 @@ function SearchPage() {
       let tableList = list.filter(item => item['status'] === 'Completed' || item['status'] === 'In Progress')
 
       const headers = [];
+      let url=[];
       for(let key in list[0]){
-        headers.push(key)
-      }
-      const columns = headers.filter(item => item !== 'progress').map(c => (
-        c === 'workload_url' ? 
-        {
-          name: c,
-          selector: row => row[c],
-          button: true,
-          cell: row => (
-            <a className="btn btn-primary" href={row[c]} target="_blank" rel="noopener noreferrer">
+        if (key !== 'workload_url') {
+          headers.push(key)
+        } else {
+          url = [{
+            name: key,
+            selector: row => row[key],
+            button: true,
+            cell: row => (
+            <a className="btn btn-primary btn-sm" href={row[key]} target="_blank" rel="noopener noreferrer">
               Workload
             </a>
           ),
-        } :
+          }]
+        }
+      }
+      const allColumns = headers.filter(item => item !== 'progress').map(c => (
+        // c === 'workload_url' ? 
+        // {
+        //   name: c,
+        //   selector: row => row[c],
+        //   button: true,
+        //   cell: row => (
+        //     <a className="btn btn-primary" href={row[c]} target="_blank" rel="noopener noreferrer">
+        //       Workload
+        //     </a>
+        //   ),
+        // } :
         {
             name: c,
             selector: row => row[c],
           }));
+      const columns = [...url, ...allColumns]
       setData(tableList)
       setSearchPool(tableList)
       setColumns(columns);

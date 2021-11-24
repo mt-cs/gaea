@@ -131,7 +131,7 @@ function SubHeader() {
             selector: row => row['status'],
             button: true,
             cell: row => row['status'] === 'Completed' ? (
-              <a className="btn btn-primary" href='https://www.w3schools.com/' target="_blank" rel="noopener noreferrer">
+              <a className="btn btn-primary" href='https://docs.aws.amazon.com/wellarchitected/latest/userguide/workloads.html' target="_blank" rel="noopener noreferrer">
                 Workload
               </a>
             ) : '',

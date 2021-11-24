@@ -8,20 +8,19 @@ class Workload(models.Model):
         ('rate', 'rate'),
         ('max', 'max')
     )
+    workload_url = models.CharField(max_length=250)
     run_id = models.CharField(max_length=20)
     date = models.DateField()
     workload_name = models.CharField(max_length=100)
     image = models.CharField(max_length=50)
     family = models.CharField(max_length=30)
     network_mode = models.CharField(max_length=50)
-    platform = models.CharField(max_length=100)
+    requirements = models.CharField(max_length=100)
     metric = models.CharField(max_length=50, choices=METRIC_TYPE)
     value = models.IntegerField()
     cpu = models.CharField(max_length=10)
     tags = models.CharField(max_length=20)
-    workload_url = models.CharField(max_length=250)
-
-
+    
     def __str__(self):
         return self.workload_name
 
