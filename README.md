@@ -9,7 +9,7 @@ GAEA
 
 ## Overview
 ### Description
-GAEA is a web-app dashboard to visualize and query [AWS Datalake](https://aws.amazon.com/solutions/implementations/data-lake-solution/) powered by [Django](https://www.djangoproject.com/) + [React](https://reactjs.org/).
+GAEA is a web-app dashboard to visualize and query [AWS workload](https://docs.aws.amazon.com/wellarchitected/latest/userguide/workloads.html) powered by [Django](https://www.djangoproject.com/) + [React](https://reactjs.org/).
 
 ### Features
 
@@ -23,27 +23,19 @@ It currently features:
     - Update history on workloads status
 - A search interface to query resources by keyword, RunID, tag or attributes
 
-
-## Wireframes
-![gaea1](https://user-images.githubusercontent.com/60201466/138014716-9162be01-db68-4349-b246-8f4160425d88.jpg)
-![gaea2](https://user-images.githubusercontent.com/60201466/138014722-b793f975-f480-40b4-98ba-bfdd7b563e43.jpg)
+## Video Walkthrough
 
 ## TechStack
 ### Frontend
-GAEA is a React.js App powered by HTML, CSS, and Bootstrap.
-
-### Server
-The server is done with REST API on Node.js.
+GAEA is a [React.js](https://reactjs.org/) App powered by Javascript, CSS, and [React Bootstrap](https://react-bootstrap.github.io/).
 
 ### Framework
-GAEA is built in Python-based Django REST Framework.
+GAEA is built in Python-based [Django REST Framework](https://www.django-rest-framework.org/).
 
 ### Database
-The database is done with Sequilize that query to SQLite DB.
+The database is done on [SQLite](https://docs.python.org/3/library/sqlite3.html#module-sqlite3). Django supports [SQLite 3.9.0](https://docs.djangoproject.com/en/3.2/ref/databases/#sqlite-notes) and later.
 
-### Web Hosting
-The web-app is hosted in AWS Beanstalk.
-
+## Dependency
 ## Schema 
 
 ![GaeaArchitecture](https://user-images.githubusercontent.com/60201466/138249641-57944a61-450c-4791-9076-5945c5f9e752.png)
@@ -53,7 +45,10 @@ The web-app is hosted in AWS Beanstalk.
 
 ### Networking
 
-## Video Walkthrough
+## Wireframes
+![gaea1](https://user-images.githubusercontent.com/60201466/138014716-9162be01-db68-4349-b246-8f4160425d88.jpg)
+![gaea2](https://user-images.githubusercontent.com/60201466/138014722-b793f975-f480-40b4-98ba-bfdd7b563e43.jpg)
+
 
 
 ### Due - Thursday, December 16, 2021 - 5pm
