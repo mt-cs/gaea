@@ -6,7 +6,7 @@ function DailyUSers(props) {
         <div className="col-md-6 text-center">
         <div className="h-100 border p-3 bg-light rounded-3">
         <p>Page Hits Per Day</p>
-        <div className="table-responsive">
+        <div className="table-responsive" id="page-hits-table">
             <DataTable
             pagination
             highlightOnHover

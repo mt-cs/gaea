@@ -18,6 +18,19 @@
 .dropdown-menu.show {
   margin-left: -150px;
 }
+#page-hits-table {
+  max-height: 300px;
+  overflow: auto;
+}
+#page-hits-table .rdt_Table::-webkit-scrollbar {
+  width: 3px;
+}
+/* #page-hits-table .rdt_Table .rdt_TableBody .rdt_TableRow .rdt_TableCell, 
+#page-hits-table .rdt_Table .rdt_TableBody .rdt_TableRow {
+  min-height: 30px !important;
+  max-height: 50px;
+} */
+
 .img-link {
   height:250px;
 }
