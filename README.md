@@ -3,12 +3,13 @@ GAEA
 
 ## Table of Contents
 1. [Overview](#Overview)
-2. [Video Walkthrough](#VideoWalkthrough)
-2. [TechStack](#TechStack)
-3. [Dependency](#Dependency)
-4. [Installation](#Installation)
-3. [Schema](#Schema)
-4. [Wireframes](#Wireframes)
+2. [Demo](#Demo)
+3. [TechStack](#TechStack)
+4. [API](#API)
+5. [Dependency](#Dependency)
+6. [Installation](#Installation)
+7. [Schema](#Schema)
+8. [Wireframes](#Wireframes)
 
 ## Overview
 ### Description
@@ -28,7 +29,7 @@ It currently features:
     - Display all completed and in-progress workload
     - Link to workload URL
 
-## Video Walkthrough
+## Demo
 
 ## TechStack
 ### Frontend
@@ -40,22 +41,6 @@ GAEA is built in Python-based [Django REST Framework](https://www.django-rest-fr
 ### Database
 The database is done on [SQLite](https://docs.python.org/3/library/sqlite3.html#module-sqlite3). Django supports [SQLite 3.9.0](https://docs.djangoproject.com/en/3.2/ref/databases/#sqlite-notes) and later.
 
-## Dependency
-```
-"axios": "^0.21.1",
-"bootstrap": "^5.1.3",
-"chart.js": "^3.6.0",
-"feather-icons": "^4.28.0",
-"react": "^17.0.2",
-"react-chartjs-2": "^3.2.0",
-"react-data-table-component": "^7.4.4",
-"react-dom": "^17.0.2",
-"react-icons": "^4.3.1",
-"react-router-dom": "^5.3.0",
-"react-scripts": "4.0.3",
-"react-table": "^7.7.0",
-"reactstrap": "^8.10.0",
-```
 ## API
 GET /api/workload/
 ```
@@ -107,6 +92,23 @@ Vary: Accept
 ]
 ```
 
+## Dependency
+```
+"axios": "^0.21.1",
+"bootstrap": "^5.1.3",
+"chart.js": "^3.6.0",
+"feather-icons": "^4.28.0",
+"react": "^17.0.2",
+"react-chartjs-2": "^3.2.0",
+"react-data-table-component": "^7.4.4",
+"react-dom": "^17.0.2",
+"react-icons": "^4.3.1",
+"react-router-dom": "^5.3.0",
+"react-scripts": "4.0.3",
+"react-table": "^7.7.0",
+"reactstrap": "^8.10.0",
+```
+
 ## Installation
 
 ```
@@ -123,7 +125,7 @@ python3 manage.py runserver
 ```
 ## Schema 
 
-![GaeaArchitecture](https://user-images.githubusercontent.com/60201466/138249641-57944a61-450c-4791-9076-5945c5f9e752.png)
+![gaea_architecture_diagram](https://user-images.githubusercontent.com/60201466/144817870-aa948fd1-bffc-43aa-b770-5320720a64bd.jpg)
 
 ## Wireframes
 ![gaea1](https://user-images.githubusercontent.com/60201466/138014716-9162be01-db68-4349-b246-8f4160425d88.jpg)
