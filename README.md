@@ -5,10 +5,10 @@ GAEA
 1. [Overview](#Overview)
 2. [Demo](#Demo)
 3. [TechStack](#TechStack)
-4. [API](#API)
-5. [Dependency](#Dependency)
+4. [Schema](#Schema)
+5. [API](#API)
 6. [Installation](#Installation)
-7. [Schema](#Schema)
+7. [Dependency](#Dependency)
 8. [Wireframes](#Wireframes)
 
 ## Overview
@@ -92,6 +92,25 @@ Vary: Accept
     ...
 ]
 ```
+## Schema 
+
+![gaea_architecture_diagram](https://user-images.githubusercontent.com/60201466/144817870-aa948fd1-bffc-43aa-b770-5320720a64bd.jpg)
+
+
+## Installation
+
+```
+git clone https://github.com/CS601-F21/side-project-mt-cs.git
+cd side-project-mt-cs
+mkvirtualenv gaea
+pip install -r requirements.txt
+cd gaea_webapp
+npm install
+node server.js
+cd ../gaea_django_project
+python3 manage.py migrate
+python3 manage.py runserver
+```
 
 ## Dependency
 ```
@@ -109,24 +128,6 @@ Vary: Accept
 "react-table": "^7.7.0",
 "reactstrap": "^8.10.0",
 ```
-
-## Installation
-
-```
-git clone https://github.com/CS601-F21/side-project-mt-cs.git
-cd side-project-mt-cs
-mkvirtualenv gaea
-pip install -r requirements.txt
-cd gaea_webapp
-npm install
-node server.js
-cd ../gaea_django_project
-python3 manage.py migrate
-python3 manage.py runserver
-```
-## Schema 
-
-![gaea_architecture_diagram](https://user-images.githubusercontent.com/60201466/144817870-aa948fd1-bffc-43aa-b770-5320720a64bd.jpg)
 
 ## Wireframes
 ![gaea1](https://user-images.githubusercontent.com/60201466/138014716-9162be01-db68-4349-b246-8f4160425d88.jpg)
