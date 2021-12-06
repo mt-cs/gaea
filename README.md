@@ -17,11 +17,13 @@ It currently features:
 
 - A homepage that displays:
     - Total amount of data size
-    - Number of active dashboard
-    - Top 10 most used workloads
+    - Number of active workloads
+    - Top 10 largest workloads
     - Number of daily users
     - Update history on workloads status
-- A search interface to query resources by keyword, RunID, tag or attributes
+- A search interface to query resources by keyword, RunID, or tag
+    - Display all completed and in-progress workload
+    - Link to workload URL
 
 ## Video Walkthrough
 
@@ -38,7 +40,9 @@ The database is done on [SQLite](https://docs.python.org/3/library/sqlite3.html#
 ## Dependency
 
 ## Sample Data
-
+```
+java -javaagent:./jmx_prometheus_javaagent-0.16.1.jar=8080:config.yaml -jar yourJar.jar
+```
 ## Installation
 
 ## Schema 
