@@ -6,6 +6,7 @@
   <br>
 </h1>
 <p align="center" style="font-size: 1.2rem;">One stop workload data visualization, search, filter and progress history manager.</p>
+<br>
 
 ## Table of Contents
 1. [Overview](#Overview)
