@@ -1,12 +1,13 @@
 GAEA
 ============
 <h1 align="center">
-  downshift 🏎
+  GAEA
   <br>
   <img src="https://user-images.githubusercontent.com/60201466/144827445-a2e0117c-ce0d-4764-af90-e09b689e181b.png" alt="gaea logo" title="gaea logo" width="300">
   <br>
 </h1>
 <p align="center" style="font-size: 1.2rem;">One stop workload data visualization, search, filter and progress history manager.</p>
+
 ## Table of Contents
 1. [Overview](#Overview)
 2. [Demo](#Demo)
