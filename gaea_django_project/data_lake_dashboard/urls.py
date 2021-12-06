@@ -18,6 +18,7 @@ from django.urls import path, include
 from rest_framework import routers
 from rest_framework.urlpatterns import format_suffix_patterns
 from workload.views import WorkloadView, PageHitsView
+from django.views.generic import TemplateView
 
 router = routers.DefaultRouter()
 router.register(r'workload', WorkloadView, 'workloads')
@@ -25,6 +26,8 @@ router.register(r'page_hits', PageHitsView, 'page_hits')
 
 urlpatterns = [
     path('api/', include(router.urls)),
-    path('admin/', admin.site.urls)
+    path('admin/', admin.site.urls),
+    path('', TemplateView.as_view(template_name = 'index.html')),
+    path('search', TemplateView.as_view(template_name = 'index.html')),
 ]
 
