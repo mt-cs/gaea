@@ -50,9 +50,23 @@ GAEA is built in Python-based [Django REST Framework](https://www.django-rest-fr
 The database is done on [SQLite](https://docs.python.org/3/library/sqlite3.html#module-sqlite3). Django supports [SQLite 3.9.0](https://docs.djangoproject.com/en/3.2/ref/databases/#sqlite-notes) and later.
 
 ## API
+
+GET /api/
+```
+HTTP 200 OK
+Allow: GET, HEAD, OPTIONS
+Content-Type: application/json
+Vary: Accept
+
+{
+    "workload": "http://localhost:8000/api/workload/",
+    "page_hits": "http://localhost:8000/api/page_hits/"
+}
+```
+
 GET /api/workload/
 ```
- HTTP 200 OK
+HTTP 200 OK
 Allow: GET, POST, HEAD, OPTIONS
 Content-Type: application/json
 Vary: Accept

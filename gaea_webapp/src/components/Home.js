@@ -73,7 +73,7 @@ function SubHeader() {
       const [pageHitsColumns, setPageHitsColumns] = useState([]);
     
       const handleDashboardData = () => {
-        axios.get("http://10.105.184.110:8000/api/workload/")
+        axios.get("/api/workload/")
         .then((res) => {
           const list = res.data;
           const headers = [];
@@ -147,7 +147,7 @@ function SubHeader() {
       }
       
         const handlePageHitsData = () => {
-          axios.get("http://10.105.184.110:8000/api/page_hits/")
+          axios.get("/api/page_hits/")
           .then((res) => {
             const list = res.data;
             const headers = [];

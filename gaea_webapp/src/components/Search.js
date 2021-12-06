@@ -9,7 +9,7 @@ function SearchPage() {
   const [datas, setData] = useState([]);
 
   const handleDashboardData = () => {
-    axios.get("http://10.105.184.110:8000/api/workload/")
+    axios.get("/api/workload/")
     .then((res) => {
       const list = res.data;
       let tableList = list.filter(item => item['status'] === 'Completed' || item['status'] === 'In Progress')
