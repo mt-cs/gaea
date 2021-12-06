@@ -3,9 +3,12 @@ GAEA
 
 ## Table of Contents
 1. [Overview](#Overview)
-2. [Wireframes](#Wireframes)
-3. [TechStack](#TechStack)
-4. [Schema](#Schema)
+2. [Video Walkthrough](#VideoWalkthrough)
+2. [TechStack](#TechStack)
+3. [Dependency](#Dependency)
+4. [Installation](#Installation)
+3. [Schema](#Schema)
+4. [Wireframes](#Wireframes)
 
 ## Overview
 ### Description
@@ -38,63 +41,93 @@ GAEA is built in Python-based [Django REST Framework](https://www.django-rest-fr
 The database is done on [SQLite](https://docs.python.org/3/library/sqlite3.html#module-sqlite3). Django supports [SQLite 3.9.0](https://docs.djangoproject.com/en/3.2/ref/databases/#sqlite-notes) and later.
 
 ## Dependency
+```
+"axios": "^0.21.1",
+"bootstrap": "^5.1.3",
+"chart.js": "^3.6.0",
+"feather-icons": "^4.28.0",
+"react": "^17.0.2",
+"react-chartjs-2": "^3.2.0",
+"react-data-table-component": "^7.4.4",
+"react-dom": "^17.0.2",
+"react-icons": "^4.3.1",
+"react-router-dom": "^5.3.0",
+"react-scripts": "4.0.3",
+"react-table": "^7.7.0",
+"reactstrap": "^8.10.0",
+```
+## API
+GET /api/workload/
+```
+ HTTP 200 OK
+Allow: GET, POST, HEAD, OPTIONS
+Content-Type: application/json
+Vary: Accept
 
-## Sample Data
+[
+    {
+        "run_id": "a1",
+        "date": "2021-10-22",
+        "workload_name": "abc",
+        "image": "ecs-service",
+        "family": "nginx-sample-stack",
+        "network_mode": "bridge",
+        "requirements": "EC2",
+        "metric": "optimal",
+        "value": 18490,
+        "cpu": 256,
+        "tags": "S123",
+        "status": "Completed",
+        "progress": [
+            "100%"
+        ],
+        "workload_url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ContainerInsights-Prometheus-Setup-nginx-ecs.html"
+    }
+    ,...
+]
 ```
-java -javaagent:./jmx_prometheus_javaagent-0.16.1.jar=8080:config.yaml -jar yourJar.jar
+
+GET /api/page_hits/
 ```
+HTTP 200 OK
+Allow: GET, HEAD, OPTIONS
+Content-Type: application/json
+Vary: Accept
+
+[
+    {
+        "day": "2021-10-22",
+        "hits": 2
+    },
+    {
+        "day": "2021-11-16",
+        "hits": 3
+    },
+    ...
+]
+```
+
 ## Installation
 
+```
+git clone https://github.com/CS601-F21/side-project-mt-cs.git
+cd side-project-mt-cs
+mkvirtualenv gaea
+pip install -r requirements.txt
+cd gaea_webapp
+npm install
+node server.js
+cd ../gaea_django_project
+python3 manage.py migrate
+python3 manage.py runserver
+```
 ## Schema 
 
 ![GaeaArchitecture](https://user-images.githubusercontent.com/60201466/138249641-57944a61-450c-4791-9076-5945c5f9e752.png)
 
-### Models
-
-### Networking
-
 ## Wireframes
 ![gaea1](https://user-images.githubusercontent.com/60201466/138014716-9162be01-db68-4349-b246-8f4160425d88.jpg)
 ![gaea2](https://user-images.githubusercontent.com/60201466/138014722-b793f975-f480-40b4-98ba-bfdd7b563e43.jpg)
-
-
-### Due - Thursday, December 16, 2021 - 5pm
-
-For this project, you will implement a side project of your choosing.
-
-To motivate this project, read the following blog post:
-
-[Understanding Why Side Projects Are Looked At So Highly in Tech](https://www.linkedin.com/pulse/understanding-why-side-projects-looked-so-highly-tech-ming-chow/)
-
-It is very likely that you will be asked about your side projects when you interview for internships or full-time software development positions. It is not always easy to have time for a side project during your studies, but side projects are very important to your development as a software developer. As a result, in this class you will be required to have a side project! 
-
-Use this as an opportunity to explore something you are excited about! 
-
-## Requirements
-
-1. The project should represent roughly 50 hours of work. It is advised that you maintain a work log so that you can demonstrate how much time you spent on various elements of the project. It is also advised that you speak with the professor during office hour to propose your idea and verify that it is appropriately scoped.
-2. The project may *extend* another project from this or another class, but no portion of the assignment that you wish to have graded as Side Project may be submitted as part of another assignment for this or another class.
-3. You *may* choose to work in a programming language other than Java. You may also choose to use any set of libraries and/or frameworks available to you. Keep in mind, however, that your grade will be based on the level of difficulty of the project. Just completing some tutorials to learn a new toolset will not be sufficient (even if it took you 50 hours!).
-4. You must submit your entire code base, a README with instructions for executing your program, and a README that explains the goal of the project, the design of the system, and any implementation details. At the time of submission, you should have a well-documented github repository that you would be proud to send to a potential employer!
-
-## Suggestions
-
-A search for [programming side projects](https://www.google.com/search?q=programming+side+projects&oq=programming+side+projects&aqs=chrome..69i57.3250j0j7&sourceid=chrome&ie=UTF-8) yields lots results with suggestions for side projects and how to choose side projects.
-
-You may choose to extend a previous project to add functionality you think is missing.
-
-You may choose to use the opportunity to learn a new language or toolset, for example build and Android application or rewrite a project using Go.
-
-You may choose to implement an application that would help make your life easier. A previous student implemented a web-based Todo list application and used it everyday to keep track of her upcoming tasks! One of my lab mates from graduate school built an online photo library and used it every day to post a photo of the sky over Santa Barbara. 
-
-Use your creativity! This is a test of not only your coding skills but your ability to define a problem on your own. Of course, I'm here to help! You may always come to office hour to discuss your ideas.
-
-## Submission
-
-1. Use the following link to create your private github repository for this assignment: [Side Project](https://classroom.github.com/a/rMpWJJ-_)
-2. For full credit, make sure to follow all [Style Guidelines](https://github.com/CS601-F21/notes/blob/main/admin/style.md). Points will be deducted for each violation.
-3. Your program must be demonstrated to the professor or a TA by **Thursday, December 16, 2021 - 5pm**. Further instructions for making an interactive grading appointment for this project will be made available at a later date.
-4. All code *and thorough documentation* must be submitted to your github repository by **Thursday, December 16, 2021 - 5pm**.
 
 ## Grading Rubric
 
@@ -104,9 +137,4 @@ Use your creativity! This is a test of not only your coding skills but your abil
 | 15 | **Design** - Program demonstrates appropriate level of difficulty. |  
 | 15 | **Design** - Solution is well designed and uses appropriate class and method decomposition. | 
 | 10 | **Design** - Meets all style guidelines. |  
-
-
-## Academic Dishonesty
-
-Any work you submit is expected to be your own original work. If you use any web resources in developing your code you are strongly advised to cite those resources. The only exception to this rule is code that is posted on the class website. The URL of the resource you used in a comment in your code is fine. If I google even a single line of uncited code and find it on the internet you may get a 0 on the assignment or an F in the class. You may also get a 0 on the assignment or an F in the class if your solution is at all similar to that of any other student.
 
