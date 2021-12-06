@@ -30,6 +30,7 @@ It currently features:
     - Link to workload URL
 
 ## Demo
+![gaea_demo](https://user-images.githubusercontent.com/60201466/144822821-18c3c8a9-991c-442e-bfa4-086c0b8dac32.gif)
 
 ## TechStack
 ### Frontend
