@@ -1,7 +1,7 @@
 <h1 align="center">
   GAEA
   <br>
-  <img src="https://user-images.githubusercontent.com/60201466/144827445-a2e0117c-ce0d-4764-af90-e09b689e181b.png" alt="gaea logo" title="gaea logo" width="30">
+  <img src="https://user-images.githubusercontent.com/60201466/144827445-a2e0117c-ce0d-4764-af90-e09b689e181b.png" alt="gaea logo" title="gaea logo" width="100">
   <br>
 </h1>
 <p align="center" style="font-size: 1.2rem;">One stop workload data visualization, search, filter and progress history manager.</p>
