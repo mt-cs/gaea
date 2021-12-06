@@ -41,7 +41,7 @@ It currently features:
 
 ## TechStack
 ### Frontend
-GAEA is a [React.js](https://reactjs.org/) App powered by Javascript, CSS, and [React Bootstrap](https://react-bootstrap.github.io/).
+GAEA is a [React.js](https://reactjs.org/) App powered by Javascript, HTML, CSS, and [React Bootstrap](https://react-bootstrap.github.io/).
 
 ### Framework
 GAEA is built in Python-based [Django REST Framework](https://www.django-rest-framework.org/).
