@@ -2,6 +2,8 @@
   GAEA
   <br>
   <br>
+ <img src="https://user-images.githubusercontent.com/60201466/170534084-b9ece920-f5c6-465c-be1b-a34a8216cd19.svg" alt="gaea logo" title="gaea logo" width="100">
+
   <img src="https://user-images.githubusercontent.com/60201466/144827445-a2e0117c-ce0d-4764-af90-e09b689e181b.png" alt="gaea logo" title="gaea logo" width="100">
   <br>
 </h1>
