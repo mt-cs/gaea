@@ -3,10 +3,8 @@
   <br>
   <br>
   
- <img src="https://user-images.githubusercontent.com/60201466/170534252-4eef40ba-328e-471b-bc21-5d00a6e83d8d.png" alt="gaea logo" title="gaea logo" width="100">
+ <img src="https://user-images.githubusercontent.com/60201466/170534252-4eef40ba-328e-471b-bc21-5d00a6e83d8d.png" alt="gaea logo" title="gaea logo" width="150">
 
-  <img src="https://user-images.githubusercontent.com/60201466/144827445-a2e0117c-ce0d-4764-af90-e09b689e181b.png" alt="gaea logo" title="gaea logo" width="100">
-  <br>
 </h1>
 <p align="center" style="font-size: 1.2rem;">One stop workload data visualization, search, filter and progress history manager.</p>
 <br>
